@@ -6,3 +6,7 @@ Feature: To test my cucumber test is running
     Given sample feature file is ready
     When I run the feature file
     Then run should be successful
+
+  Scenario: Kiet test
+    Given Navigate to URL "https://rahulshettyacademy.com/dropdownsPractise/"
+    Then Verify Popup title

@@ -1,4 +1,4 @@
-package webApplication.executeTests.sample.runner;
+package webApplication.runner;
 
 import io.cucumber.testng.CucumberOptions;
 
@@ -10,8 +10,9 @@ import io.cucumber.testng.CucumberOptions;
         glue = "stepDefinitions",
         monochrome = true,
         features = {
-                "./src/test/java/webApplication/executeTests/sample/feature/v1/Sample.feature"
+                "./src/test/java/webApplication/executeTests/sample/feature/v1/webApplication.cucumber.stepDefinitions.Sample.feature"
         }
 )
-public class SampleV1 {
+public class Runner extends Hook {
+        //set up env, start driver,...
 }
